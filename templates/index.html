@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management</title>
+</head>
+<body>
+    <h1>Employee Management</h1>
+
+    <h2>Employees</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="employee-table">
+            <!-- Employee data will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+
+    <h2>Add/Edit Employee</h2>
+    <form id="employee-form">
+        <input type="hidden" id="employee-id">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="position">Position:</label>
+        <input type="text" id="position" required>
+        <button type="submit">Save</button>
+    </form>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
